@@ -15,17 +15,23 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: lightgray;
 }
 a:hover {
   color: #6633ff;
+}
+
+/* header */
+
+h1 {
+	font-weight: 200;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: #F16162;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -52,12 +58,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: white;
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/my-back.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -77,16 +83,16 @@ header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
 .tag {
-  background-color: #efefef;
+  background-color: rgba(255, 255, 255, 0.6);
   color: black;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: lightcoral;
 }
 .card {
   margin: 30px;
@@ -94,12 +100,13 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: left;
   background: #fff;
-  border-bottom: 4px solid #ccc;
+  border-bottom: 7px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
+  position: relative;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #F16162;
 }
 
 ul.skills {
@@ -110,7 +117,7 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #F16162;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -167,7 +174,19 @@ a.social:hover {
   clear: both;
 }
 
+/* ==========================
+My styles
+============================= */
+
+.mifoto {
+	position: absolute;
+	top: -25px;
+	left: -20px;
+}
+
+
 /* Styles for larger screens */
+
 @media screen and (min-width: 720px) {
   
   .flex {
