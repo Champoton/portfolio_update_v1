@@ -36,6 +36,7 @@ h1 {
   padding: 10px;
   position: fixed;
   text-align: center;
+  top: 0;
 }
 .nav {
   display: flex;
@@ -105,7 +106,8 @@ header .profile-image:hover {
   transition: all .5s;
   position: relative;
 }
-.card:hover {
+.card:hover,
+.element:hover {
   border-color: #F16162;
 }
 
@@ -178,10 +180,43 @@ a.social:hover {
 My styles
 ============================= */
 
+.image {
+	width: 100%;
+}
+
+strong {
+	color: #F16162;
+}
+
 .mifoto {
+	height: 45px;
+	width: 45px;
 	position: absolute;
 	top: -25px;
 	left: -20px;
+	transition: all .4s;
+}
+
+.card:hover .mifoto {
+	transform: rotate(-90deg) scale(1.2);
+
+}
+
+.element {
+	background: white;
+	padding: 20px 20px 8px 20px;
+	text-align: left;
+	margin: 20px;
+	border-bottom: 7px solid #ccc;
+	border-radius: 6px;
+	transition: all .5s;
+}
+
+.cont-experience {
+	margin: auto;
+	margin-top: 80px;
+	width: 95%;
+	max-width: 1024px;
 }
 
 
@@ -215,6 +250,11 @@ My styles
   main p {
     line-height: 1.6em;
   }
+	
+  .cont-experience {
+	margin-top: 80px;
+	width: 80%;
+}
 
   footer {
     font-size: 1.3em;
